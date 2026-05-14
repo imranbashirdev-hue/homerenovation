@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <link rel="stylesheet" href="style.css">
+  <title>RenovaCraft | Home Renovation Experts</title>
+  <!-- Google Fonts + Font Awesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+ 
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <div class="nav-bar">
+      <div class="logo">
+        <h1>RenovaCraft</h1>
+        <span>home transformations</span>
+      </div>
+      <div class="menu-toggle" id="mobileMenuToggle">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#contact" class="btn-primary" style="background:#c16529; color:white;">Get Estimate</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <span class="badge"><i class="fas fa-home"></i> Since 2012</span>
+          <h1>Your dream home <br> starts with RenovaCraft</h1>
+          <p>Award-winning home renovation & remodeling experts. From kitchen makeovers to full home transformations, we craft spaces you’ll love.</p>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn-primary">Free Consultation</a>
+            <a href="#projects" class="btn-outline">Our Work</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="https://placehold.co/600x450/f9ede0/c16529?text=Renovation+Design" alt="Modern home renovation">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section bg-light">
+    <div class="container">
+      <div class="section-title">
+        <h2>Who we are</h2>
+        <p>Trusted renovation partner with 400+ successful projects</p>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center;">
+        <div style="flex:1">
+          <img src="https://placehold.co/500x400/e9e2d8/c16529?text=Team+in+Action" style="width:100%; border-radius: 32px;" alt="about us">
+        </div>
+        <div style="flex:1">
+          <h3 style="font-size: 1.8rem; margin-bottom: 20px;">Craftsmanship meets modern design</h3>
+          <p style="margin-bottom: 16px; line-height:1.5;">We blend quality materials, innovative design, and transparent communication to bring your vision to life. No hidden costs, no delays—just beautiful results.</p>
+          <p style="margin-bottom: 20px;">Our team includes architects, interior designers, and project managers dedicated to making renovation stress-free.</p>
+          <div><i class="fas fa-check-circle" style="color:#c16529;"></i> 15+ years of expertise</div>
+          <div><i class="fas fa-check-circle" style="color:#c16529;"></i> Full project management</div>
+          <div><i class="fas fa-check-circle" style="color:#c16529;"></i> Warranty on all work</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Our renovation services</h2>
+        <p>Tailored solutions for every corner of your home</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card"><i class="fas fa-kitchen-set"></i><h3>Kitchen Remodel</h3><p>Custom cabinetry, quartz countertops, and smart layouts.</p></div>
+        <div class="service-card"><i class="fas fa-bath"></i><h3>Bathroom Renovation</h3><p>Luxury tiles, modern fixtures, walk-in showers.</p></div>
+        <div class="service-card"><i class="fas fa-house-chimney-window"></i><h3>Interior Finishing</h3><p>Flooring, drywall, painting and trim details.</p></div>
+        <div class="service-card"><i class="fas fa-building"></i><h3>Whole Home Makeover</h3><p>Complete structural and aesthetic transformation.</p></div>
+        <div class="service-card"><i class="fas fa-sun-plant-wilt"></i><h3>Outdoor Living</h3><p>Decks, patios, outdoor kitchens, landscaping.</p></div>
+        <div class="service-card"><i class="fas fa-charging-station"></i><h3>Smart home upgrades</h3><p>Energy efficiency, lighting automation, security.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Gallery with filtering (JS) -->
+  <section id="projects" class="section bg-light">
+    <div class="container">
+      <div class="section-title">
+        <h2>Our recent projects</h2>
+        <p>Real transformations, real stories</p>
+      </div>
+      <div class="project-filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="kitchen">Kitchens</button>
+        <button class="filter-btn" data-filter="bath">Bathrooms</button>
+        <button class="filter-btn" data-filter="living">Living spaces</button>
+      </div>
+      <div class="projects-grid" id="projectsGrid">
+        <!-- dynamic cards will be inserted or static but we fill with JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials (slider) -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>What our clients say</h2>
+        <p>We care about your satisfaction</p>
+      </div>
+      <div class="testimonials-slider">
+        <div class="testimonial-card"><i class="fas fa-quote-left"></i><p>RenovaCraft gave our 70's house a stunning modern look. The team kept everything clean and finished ahead of schedule. Highly recommended!</p><div class="client"><img src="https://randomuser.me/api/portraits/women/68.jpg" alt="client"><div><h5>Sarah J.</h5><span>Full renovation</span></div></div></div>
+        <div class="testimonial-card"><i class="fas fa-quote-left"></i><p>Professional, transparent, and creative. Our kitchen looks like a magazine. They listened to every detail.</p><div class="client"><img src="https://randomuser.me/api/portraits/men/32.jpg" alt="client"><div><h5>Michael T.</h5><span>Kitchen remodel</span></div></div></div>
+        <div class="testimonial-card"><i class="fas fa-quote-left"></i><p>Amazing experience with the bathroom redesign. The waterproofing and tile work is flawless. We will definitely hire again for outdoor deck.</p><div class="client"><img src="https://randomuser.me/api/portraits/women/45.jpg" alt="client"><div><h5>Linda R.</h5><span>Bathroom + deck</span></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Quote Form -->
+  <section id="contact" class="section bg-light">
+    <div class="container">
+      <div class="section-title">
+        <h2>Let’s talk about your project</h2>
+        <p>Request a free estimate — we’ll contact you within 24h</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="info-row"><i class="fas fa-map-pin"></i> <span>456 Crescent Avenue, Austin, TX 78701</span></div>
+          <div class="info-row"><i class="fas fa-phone-alt"></i> <span>(888) 789-1234</span></div>
+          <div class="info-row"><i class="fas fa-envelope"></i> <span>hello@renovacraft.com</span></div>
+          <div class="info-row"><i class="fas fa-clock"></i> <span>Mon-Fri: 8am – 6pm | Sat: 9am – 2pm</span></div>
+          <div style="margin-top: 32px;"><img src="https://placehold.co/300x120/e7ddd0/c16529?text=BBB+A+rated" style="width:100%; max-width:200px" alt="accreditation"></div>
+        </div>
+        <div class="contact-form">
+          <form id="contactForm">
+            <div class="form-group"><input type="text" id="name" placeholder="Full name" required></div>
+            <div class="form-group"><input type="email" id="email" placeholder="Email address" required></div>
+            <div class="form-group"><input type="tel" id="phone" placeholder="Phone (optional)"></div>
+            <div class="form-group"><textarea rows="4" id="message" placeholder="Tell us about your renovation idea..."></textarea></div>
+            <button type="submit" class="btn-primary" style="width:100%; border-radius:48px; padding: 14px;">Send Request <i class="fas fa-arrow-right"></i></button>
+            <p id="formFeedback" style="margin-top: 16px; font-size:0.8rem;"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-flex">
+      <div class="footer-col"><h4>RenovaCraft</h4><p>Building better homes, one renovation at a time.<br>Licensed & insured.</p></div>
+      <div class="footer-col"><h4>Quick links</h4><a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#projects">Projects</a></div>
+      <div class="footer-col"><h4>Legal</h4><a href="#">Privacy policy</a><a href="#">Terms of use</a><a href="#">Warranty info</a></div>
+      <div class="footer-col"><h4>Follow us</h4><a href="#"><i class="fab fa-facebook"></i> Facebook</a><a href="#"><i class="fab fa-instagram"></i> Instagram</a><a href="#"><i class="fab fa-pinterest"></i> Pinterest</a></div>
+    </div>
+    <div class="copyright">© 2025 RenovaCraft – Home Renovation Experts. All rights reserved.</div>
+  </div>
+</footer>
+<script type="script"></script>
+
+</body>
+
+</html>
